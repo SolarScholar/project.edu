@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="icon" type="image/ico" sizes="32x32" href="icon/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <table class = "price-table">
+        <caption>Missions Launches in October</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Mission</th>
+                <th rowspan="2">Launch Vehicle</th>
+                <th rowspan="2">Date</th>
+                <th rowspan="2">Agency</th>
+                <th rowspan="2">Country</th>
+                <th rowspan="2">Launch location</th>
+                <th rowspan="2">Live Stream</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Galactic 04</td>
+                <td>SpaceShipTwo</td>
+                <td>~October 5</td>
+                <td>VirginSpace</td>
+                <td>USA</td>
+                <td>Air launch to suborbital flight</td>
+                <td>Scheduled</td>
+            </tr>
+            <tr>
+                <td>THEOS-2, TRITON & others</td>
+                <td>Vega</td>
+                <td>October 5</td>
+                <td>ESA</td>
+                <td>France</td>
+                <td>Guiana Space Centre</td>
+                <td>Not scheduled</td>
+            </tr>
+             <tr>
+                <td>Psyche</td>
+                <td>Falcon Heaby</td>
+                <td>October 5</td>
+                <td>NASA, SpaceX</td>
+                <td>USA</td>
+                <td>Kennedy Space Center</td>
+                <td>Scheduled</td>
+            </tr>
+            <tr>
+                <td>Project Kuiper Protoflight Mission(Atlas V#1)</td>
+                <td>Atlas V</td>
+                <td>October 7</td>
+                <td>ULA</td>
+                <td>USA</td>
+                <td>Cape Canaveral Space Force Station</td>
+                <td>Unknown</td>
+            </tr>
+            <tr>
+                <td>SN1 Test Flight</td>
+                <td>Miura 1</td>
+                <td>~October 7</td>
+                <td>PLD Space</td>
+                <td>Spain</td>
+                <td>El Arenosillo Test Centre</td>
+                <td>Scheduled</td>
+            </tr>
+            <tr>
+                <td>TV-D1</td>
+                <td>Gaganyaan Abort Test Booster</td>
+                <td>~October 26</td>
+                <td>ISRO</td>
+                <td>India</td>
+                <td>Satish Dhawan Space Centre, Sriharikota</td>
+                <td>Unknown</td>
+            </tr>
+             <tr>
+                <td>Starship</td>
+                <td>Integrated Flight Test</td>
+                <td>~October 31</td>
+                <td>SpaceX</td>
+                <td>USA</td>
+                <td>SpaceX Launch Complex at Texas</td>
+                <td>Unknown</td>
+            </tr>
+            <tr>
+                <td>O3b mPower 5 & 6</td>
+                <td>Flacon 9</td>
+                <td>~October 31</td>
+                <td>SpaceX</td>
+                <td>USA</td>
+                <td>Cape Canaveral Space Force Station</td>
+                <td>Unknown</td>
+            </tr>
+        </tbody>
+    </table>
+    <form class = "reg">
+        <label for="login">Введите логин</label><br>
+        <input id="login" type = "text" name = "login" placeholder="Введите логин" required><br>
+        <input type = "password" name = "pass" required autofocus><br>
+        <input type="radio" name = "gender" id = "male" value = "male" checked>
+        <label for = "male">Муж</label><br>
+        <input type="radio" name = "gender" id = "female" value = "female">
+        <label for = "female">Жен</label><br>
+        <select name = "type" id = "type">
+            <option value="student">Студент</option>
+            <option value="teacher">Учитель</option>
+            <option value="parent">Родитель</option>
+        </select><br>
+        <textarea name="about" id = "about" placeholder="Немного о себе" cols="30" rows="10"></textarea><br>
+        <input type="checkbox" id="agreement" name = "agreement" checked = "true" required>
+        <label for="agreement" >Согласие на обработку</label><br>
+        <input type = "submit" value="Зарегистрироваться"><br>
+    </form>
+</body>
+</html>

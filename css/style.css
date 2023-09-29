@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* div {
+    background-color: aqua;
+    width: 300px;
+    height: 100px;
+    border: solid 5px black;
+    padding: 10px 30px 60px 100px; top right bottom left
+    text-align: justify;
+    margin: 150px auto; top left,right
+} */
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+}
+header {
+    color: white;
+    background-color: #003247;
+    padding: 30px 10%;
+}
+header a{
+    text-decoration: none;
+}
+.sattelite-logo {
+    margin: left;
+    padding: 0 0 0 1%;
+}
+.main_menu {
+    display: absolute;
+    position: relative;
+    margin-top: -35px;
+    margin-left: 55%;
+    list-style: none;
+}
+.return_to_main {
+    font-size: 1.5rem;
+    background-color: #003247;
+}
+main {
+    background-color: white;
+}
+.just_an_image {
+    display: block;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+}
+footer {
+    color: white;
+    background-color: #003247;
+    padding: 20px 10%;
+}
+footer p > a {
+    content: "";
+    position: relative;
+    left: 1%;
+}
+footer p > a+a {
+    left: 2%;
+}
+.footer_text {
+    color: white;
+}
+a {
+    text-decoration: underline;
+    color: white;
+}
+.in_text_link {
+    color:#0076a8;
+}
+.list_articles {
+    text-align: left;
+}
+.list_articles_text {
+    color: white;
+}
+.about_mission {
+    background-color: white;
+    padding: 20px 10%;
+}
+.about_project {
+    text-align: center;
+}
+.about_project p {
+    font-style: italic;
+}
+.article {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    color: black;
+    background-color: white;
+    text-align: center;
+}
+.watch {
+    background-color: #003247;
+}
+.watch_on_youtube {
+    color:white;
+}
+.about_text {
+    text-align: justify;
+    font-size: 1rem;
+}
+.articles {
+    background-color:rgb(87, 87, 87);
+    text-align: center;
+    padding: 20px 11%;
+}
+h1 {
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+blockquote {
+    font-style: italic;
+}
+.gondola {
+    border: ridge 1em grey;
+    border-radius: 5em;
+    box-shadow: 5px 5px #88888881;
+}
+/* a:link {
+    color: white;
+}
+a:visited {
+    color: gray;
+}
+a:active {
+    color: black;
+}
+a:hover {
+    color: rgb(0, 247, 255);
+}
+a:focus {
+    color: blueviolet;
+} */
+.list_articles li:nth-child(2)::after { /*Черезстрочное оформление*/
+    content: "new";
+    margin: 5px;
+    font-size: 12px;
+    color: white;
+}
+.list_articles li:first-child::after { /*Черезстрочное оформление*/
+    content: "Important";
+    margin: 5px;
+    font-size: 12px;
+    color: white;
+}
+.list_articles li:nth-child(odd) { /*Черезстрочное оформление*/
+    background-color: rgb(0, 36, 197);
+}
+p:lang(ru) {
+    font-style: italic;
+}
+.main_menu li {
+    position: relative;
+    display: inline-block;
+    margin: 0px 10px;
+}
+.main_menu li::after{
+    content: "new";
+    margin: 5px;
+    font-size: 12px;
+    color: white;
+}
+.main_menu li::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 0%;
+    height: 2px;
+    background: brown;
+    transition: 0.3s;
+}
+.main_menu li:hover::before {
+    width: 100px;
+
+}
+/* .main_text:first-line {
+    letter-spacing: 20px;
+} */
+.main_text:lang(ru) {
+    font-style: italic;
+    background-color: azure;
+}
+.main_text:lang(ru)::before {
+    content: "рус.";
+    font-style: italic;
+    font-size: 12px;
+}
+img+p {
+    padding-top: 2%;
+}
+figure+p {
+    padding-top: 2%;
+}
+.launches_list {
+    text-align: center;
+    padding: 5% 10%;
+}
+.launches-table caption {
+    font-size: 30px;
+    padding: 1%;
+}
+.launches-table {
+    /* border: solid green 5px; */
+    border-collapse: collapse;
+    text-align: center;
+}
+.launches-table td,
+.launches-table th {
+    padding: 10px;
+    border: solid 2px rgb(0, 0, 0);
+    font-size: 1.2em;
+}
+.launches-table tbody tr:first-child {
+    background-color: rgb(0, 206, 0);
+}
+.launches-table tbody tr:nth-child(7) {
+    background-color: rgb(72, 230, 230);
+}
+.reg input[type = "text"],
+.reg input[type = "password"]{
+    border: 1px solid darkblue;
+    background-color: aliceblue;
+    padding: 5px 15px;
+    margin-top: 15px;
+}
+.reg input[type = "submit"] {
+    border: none;
+    background: darkblue;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.reg input[type = "submit"]:focus {
+    border: none;
+    background: darkblue;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 2px 1px black;
+    transition: 00.3s;
+}
+a[href^='http'] {
+    font-style: italic;
+}
+.feedback {
+    text-align: center;
+}
+#contact-form input[type = "text"], #contact-form select {
+    height: 40px;
+    width: 350px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: #003247 solid 1px;
+    border-radius: 5px;
+    background-color: azure;   
+    font-size: 20px;
+}
+#contact-form input[type = "submit"] {
+    text-align: center;
+    font-size: 16px;
+    color: rgb(173, 173, 173);
+    background-color: #003247;
+    height: 40px;
+    width: 80px;
+    border: black 1px solid;
+    border-radius: 5px;
+    transition: 0.3s;
+   
+}
+#contact-form input[type = "submit"]:hover {
+    color: white;
+}
+#contact-form input[type = "submit"]:active {
+    color: white;
+    background-color: #0076a8;
+}
+#contact-form label {
+    font-size: 20px;
+}
+#contact-form textarea {
+    border: solid 2px black;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: azure;
+}
+/* #contact-form select {
+    resize: none;
+    border: solid 2px black;
+    border-radius: 5px;
+    font-size: 17px;
+} */
