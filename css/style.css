@@ -18,10 +18,11 @@ html {
 }
 header {
     color: white;
-    background-color: #0083bb;
+    background-color: #003247;
     padding: 30px 10%;
 }
 header a{
+    color: white;
     text-decoration: none;
 }
 .sattelite-logo {
@@ -67,15 +68,17 @@ footer p > a+a {
 }
 a {
     text-decoration: underline;
-    color: white;
+    color: black;
 }
 .in_text_link {
     color:#0076a8;
 }
 .list_articles {
+    position: relative;
     text-align: left;
 }
-.list_articles_text {
+.list_articles_text,
+.list_articles_text a {
     color: white;
 }
 .about_mission {
@@ -108,8 +111,8 @@ a {
 }
 .articles {
     background-color:rgb(87, 87, 87);
-    text-align: center;
     padding: 20px 11%;
+    color: white;
 }
 h1 {
     text-transform: capitalize;
@@ -155,8 +158,12 @@ a:focus {
     font-size: 12px;
     color: white;
 }
-.list_articles li:nth-child(odd) { /*Черезстрочное оформление*/
+/* .list_articles li:nth-child(odd) {
     background-color: rgb(0, 36, 197);
+} */
+.list_articles a+time {
+    position: absolute;
+    right: 0;
 }
 p:lang(ru) {
     font-style: italic;
@@ -166,12 +173,7 @@ p:lang(ru) {
     display: inline-block;
     margin: 0px 10px;
 }
-.main_menu li::after{
-    content: "new";
-    margin: 5px;
-    font-size: 12px;
-    color: white;
-}
+
 .main_menu li::before {
     content: "";
     position: absolute;
@@ -183,12 +185,9 @@ p:lang(ru) {
     transition: 0.3s;
 }
 .main_menu li:hover::before {
-    width: 100px;
+    width: 100%;
 
 }
-/* .main_text:first-line {
-    letter-spacing: 20px;
-} */
 .main_text:lang(ru) {
     font-style: italic;
     background-color: azure;
@@ -302,3 +301,34 @@ a[href^='http'] {
     border-radius: 5px;
     font-size: 17px;
 } */
+.news_section {
+    padding: 30px 10%;
+}
+.news-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.flex-element {
+    width: 350px;
+    padding: 3px;
+}
+.flex-element img {
+    width: 350px;
+}
+.flex-element a {
+    text-decoration: none;
+}
+.news {
+    padding: 30px 10%;
+}
+.news-articles-list {
+    padding-top: 1%;
+}
+.news-article {
+    border: solid black 1px;
+    padding: 1%;
+}
+.news-article img {
+    width: 200px;
+}
